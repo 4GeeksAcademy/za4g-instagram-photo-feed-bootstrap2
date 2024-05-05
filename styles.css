@@ -6,7 +6,15 @@
   .fa-gear {
     color: white;
   }
+
+  .fa-table-cells {
+    color: lightgray;
+  }
   
+  .fa-square {
+    color: lightgray;
+  }
+
   .create-post {
     margin-right: 10px;
   }
