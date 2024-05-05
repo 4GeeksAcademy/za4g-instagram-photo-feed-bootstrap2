@@ -1,0 +1,99 @@
+.div-navbar {
+    padding: 5px;
+    display: flex-inline;
+  }
+  
+  .fa-gear {
+    color: white;
+  }
+  
+  .create-post {
+    margin-right: 10px;
+  }
+  
+  .dropdown-toggle {
+    color: white !important;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brandname {
+    padding-left: 10px;
+    font-size: x-large;
+    margin-bottom: 0px;
+  }
+  
+  .camera-icon,
+  .location-icon {
+    padding: 10px;
+    margin-right: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #eeeeee;
+  }
+  
+  .div-pills {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .instagram-tab-content {
+    padding: 10px;
+    width: 85%;
+  }
+  
+  .instagram-gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    justify-content: center;
+  }
+  
+  .instagram-gallery img {
+    margin: 10px;
+    
+  }
+  
+  .instagram-feed {
+    width: 30% !important;
+    border: 1px solid black;
+    margin-bottom: 30px;
+  }
+  
+  .instagram-feed-header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+  
+  .text-title {
+    flex: 5;
+    align-items: center;
+    vertical-align: middle;
+  }
+  
+  .text-pagination {
+    flex: 1;
+    align-items: center;
+  }
+  
+  img {
+    max-width:100%;
+  }
+  
+  .instagram-feed-image {
+    padding: 10px;
+  }
+  
+  .instagram-feed-footer {
+    padding: 10px;;
+  }
+  
+  .likes-count {
+    font-weight: bold;
+  }
+  

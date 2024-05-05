@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram Photo Feed with Bootstrap</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="div-navbar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="navbar-brand">
+            <i class="navbar-brandlogo fa-brands fa-instagram fa-2x"></i>
+            <p class="navbar-brandname">Instagram</p>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto">
+              <!-- Button trigger modal -->
+              <button type="button" class="create-post btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create a new post
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                      <button type="button" class="btn-close btn-primary" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <label for="basic-url">Caption:</label>
+                      <div class="input-group">
+                        <textarea class="form-control" id="" aria-label="With textarea" placeholder="Add the caption of your post here"></textarea>
+                      </div>
+                      <div class="modal-icons">
+                        <i class="camera-icon fa-solid fa-camera"></i>
+                        <i class="location-icon fa-solid fa-location-dot"></i>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <li class="nav-item dropdown">
+                <div class="bg-secondary nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-gear"></i>
+                </a>
+                
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="div-pills">
+      <!-- Pills -->
+      <!-- Nav tabs -->
+      <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+            <i class="fa-solid fa-table-cells"></i>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+            <i class="fa-solid fa-square"></i>
+          </button>
+        </li>
+      </ul>
+      <div class="instagram-tab-content tab-content mx-auto" id="pills-tabContent">
+        <!-- Feed -->
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+          
+          <div class="instagram-gallery">
+            <div class="instagram-gallery-item"><img src="https://picsum.photos/id/1/500" alt=""></div>
+            <div class="instagram-gallery-item"><img src="https://picsum.photos/id/2/500" alt=""></div>
+            <div class="instagram-gallery-item"><img src="https://picsum.photos/id/3/500" alt=""></div>
+            <div class="instagram-gallery-item"><img src="https://picsum.photos/id/4/500" alt=""></div>
+            <div class="instagram-gallery-item"><img src="https://picsum.photos/id/5/500" alt=""></div>
+            <div class="instagram-gallery-item"><img src="https://picsum.photos/id/6/500" alt=""></div>
+          </div>
+        </div>
+        <!-- Gallery -->
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+          <div class="instagram-feed container">
+            <div class="instagram-feed-header">
+              <div class="text-title">
+                <h4>My Crazy dog Spark!</h4>
+                </div>
+              <div class="text-pagination">8/26</div>
+            </div>
+            <div class="instagram-feed-image">
+              <img src="https://picsum.photos/id/1/450" alt="">
+            </div>
+            <div class="instagram-feed-footer">
+              <p class="likes-count">204 Likes</p>
+              <p>This is an example of a very good photo that you can post on instagram</p>
+            </div>
+          </div>
+          <div class="instagram-feed container">
+            <div class="instagram-feed-header">
+              <div class="text-title">
+                <h4>My Crazy dog Spark!</h4>
+                </div>
+              <div class="text-pagination">8/26</div>
+            </div>
+            <div class="instagram-feed-image">
+              <img src="https://picsum.photos/id/1/450" alt="">
+            </div>
+            <div class="instagram-feed-footer">
+              <p class="likes-count">204 Likes</p>
+              <p>This is an example of a very good photo that you can post on instagram</p>
+            </div>
+          </div>
+          <div class="instagram-feed container">
+            <div class="instagram-feed-header">
+              <div class="text-title">
+                <h4>My Crazy dog Spark!</h4>
+                </div>
+              <div class="text-pagination">8/26</div>
+            </div>
+            <div class="instagram-feed-image">
+              <img src="https://picsum.photos/id/1/450" alt="">
+            </div>
+            <div class="instagram-feed-footer">
+              <p class="likes-count">204 Likes</p>
+              <p>This is an example of a very good photo that you can post on instagram</p>
+            </div>
+          </div>                    
+        </div>
+      </div>
+    </div>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+  </html>
+  
